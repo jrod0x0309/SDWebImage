@@ -138,6 +138,7 @@
             if (options & SDWebImageLowPriority) downloaderOptions |= SDWebImageDownloaderLowPriority;
             if (options & SDWebImageProgressiveDownload) downloaderOptions |= SDWebImageDownloaderProgressiveDownload;
             if (options & SDWebImageRefreshCached) downloaderOptions |= SDWebImageDownloaderUseNSURLCache;
+            if (options & SDWebImageShouldHandleCookies) downloaderOptions |= SDWebImageDownloaderShouldHandleCookies;
             if (image && options & SDWebImageRefreshCached)
             {
                 // force progressive off if image already cached but forced refreshing
